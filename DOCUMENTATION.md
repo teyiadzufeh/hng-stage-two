@@ -55,7 +55,7 @@ The request body should contain a JSON object with the following field:
 #### Request
 
 - **Method**: GET
-- **URL**: [{{Host}}/api/64ff2c26e8c0b498646cfd60](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
+- **URL**: [{{Host}}/api/{{userId}}](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
 
 #### Response
 
@@ -89,7 +89,7 @@ The request body should contain a JSON object with the following field:
 #### Request
 
 - **Method**: PUT
-- **URL**: [{{Host}}/api/64ff2c26e8c0b498646cfd60](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
+- **URL**: [{{Host}}/api/{{userId}}](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
 - **Headers**:
   - `Content-Type: application/json`
 
@@ -135,7 +135,7 @@ The request body should contain a JSON object with the updated user information.
 #### Request
 
 - **Method**: DELETE
-- **URL**: [{{Host}}/api/64ff2c26e8c0b498646cfd60](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
+- **URL**: [{{Host}}/api/{{userId}}](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
 
 #### Response
 
