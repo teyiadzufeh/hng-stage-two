@@ -2,14 +2,14 @@
 
 ## Description
 
-This is a Node.js project created by Teyi Adzufeh for the HNG Stage One and Two of the Backend Track.
+This is a Node.js project created by Teyi Adzufeh for the HNG Stage Two of the Backend Track.
 
 ## Installation
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/teyiadzufeh/hng-stage-one.git`
-2. Navigate to the project directory: `cd hng-stage-one`
+1. Clone the repository: `git clone https://github.com/teyiadzufeh/hng-stage-two.git`
+2. Navigate to the project directory: `cd hng-stage-two`
 3. Install the dependencies: `npm install`
 
 ## Usage
@@ -22,6 +22,13 @@ npm run dev
 
 This will start the server on `http://localhost:3000`.
 
+To start the development server, use the following command:
+
+```
+npm start
+
+```
+
 The hosted server is: `https://hng-stage-one-4vem.onrender.com`.
 
 ## Scripts
@@ -32,7 +39,6 @@ The hosted server is: `https://hng-stage-one-4vem.onrender.com`.
 ## Dependencies Explained
 - express: NodeJS Framework used for creating Web APIs
 - mongoose and mongodb: Used for connecting to the database as well as managing the database
-- nanoid: For generating a random string used in creating the "user_id"
 - dotenv: Provides the option of using a file (.env) to store sensitive variables
 
 ## API Documentation
