@@ -13,7 +13,7 @@ Welcome to TeyiAdzufeh's HNG Stage 2 API documentation. This API allows you to i
 #### Request
 
 - **Method**: POST
-- **URL**: [{{Host}}/api/](https://hng-stage-one-4vem.onrender.com/api)
+- **URL**: [{{Host}}/api/](https://hng-stage-two-n49x.onrender.com/api)
 - **Headers**:
   - `Content-Type: application/json`
 
@@ -35,7 +35,6 @@ The request body should contain a JSON object with the following field:
     "message": "Person created successfully",
     "data": {
         "name": "Mark E",
-        "user_id": "MarkE_4V28IdNix",
         "_id": "64ff2c26e8c0b498646cfd60",
         "__v": 0,
         "createdAt": "2023-09-11T15:03:02.902Z",
@@ -56,7 +55,7 @@ The request body should contain a JSON object with the following field:
 #### Request
 
 - **Method**: GET
-- **URL**: [{{Host}}/api/MarkE_4V28IdNix](https://hng-stage-one-4vem.onrender.com/api/MarkE_4V28IdNix)
+- **URL**: [{{Host}}/api/64ff2c26e8c0b498646cfd60](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
 
 #### Response
 
@@ -71,7 +70,6 @@ The request body should contain a JSON object with the following field:
     "data": {
         "_id": "64ff2c26e8c0b498646cfd60",
         "name": "Mark E",
-        "user_id": "MarkE_4V28IdNix",
         "__v": 0,
         "createdAt": "2023-09-11T15:03:02.902Z",
         "updatedAt": "2023-09-11T15:03:02.902Z"
@@ -91,7 +89,7 @@ The request body should contain a JSON object with the following field:
 #### Request
 
 - **Method**: PUT
-- **URL**: [{{Host}}/api/MarkE_4V28IdNix](https://hng-stage-one-4vem.onrender.com/api/MarkE_4V28IdNix)
+- **URL**: [{{Host}}/api/64ff2c26e8c0b498646cfd60](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
 - **Headers**:
   - `Content-Type: application/json`
 
@@ -118,7 +116,6 @@ The request body should contain a JSON object with the updated user information.
     "data": {
         "_id": "64ff2c26e8c0b498646cfd60",
         "name": "Man Esie",
-        "user_id": "MarkE_4V28IdNix",
         "__v": 0,
         "createdAt": "2023-09-11T15:03:02.902Z",
         "updatedAt": "2023-09-11T15:10:24.236Z"
@@ -138,7 +135,7 @@ The request body should contain a JSON object with the updated user information.
 #### Request
 
 - **Method**: DELETE
-- **URL**: [{{Host}}/api/MarkE_4V28IdNix](https://hng-stage-one-4vem.onrender.com/api/MarkE_4V28IdNix)
+- **URL**: [{{Host}}/api/64ff2c26e8c0b498646cfd60](https://hng-stage-two-n49x.onrender.com/api/64ff2c26e8c0b498646cfd60)
 
 #### Response
 
@@ -160,7 +157,7 @@ The request body should contain a JSON object with the updated user information.
 
 ## Variables
 
-- `Host`: [https://hng-stage-one-4vem.onrender.com](https://hng-stage-one-4vem.onrender.com)
+- `Host`: [https://hng-stage-two-n49x.onrender.com](https://hng-stage-two-n49x.onrender.com)
 - `Local`: [http://localhost:3000](http://localhost:3000)
 
 ```

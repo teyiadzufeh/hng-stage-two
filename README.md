@@ -29,7 +29,7 @@ npm start
 
 ```
 
-The hosted server is: `https://hng-stage-one-4vem.onrender.com`.
+The hosted server is: `https://hng-stage-two-n49x.onrender.com`.
 
 ## Scripts
 
