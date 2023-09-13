@@ -1,5 +1,6 @@
 require('dotenv').config();
 require("../db");
+const { isValidObjectId } = require('mongoose');
 const Person = require("../db/models/person");
 
 /**
@@ -53,7 +54,12 @@ exports.createUser = async (req, res, next) => {
  */
 exports.fetchUser = async (req, res, next) => {
     try {
-        const person = await Person.findById(req.params.user_id);
+        const id = req.params.user_id;
+        if (isValidObjectId(id) == false) return res.status(404).json({
+            "message": "Person not found"
+        });
+
+        const person = await Person.findById(id);
         if (!person) return res.status(404).json({
             "message": "Person not found"
         })
@@ -74,7 +80,12 @@ exports.fetchUser = async (req, res, next) => {
  */
 exports.updateUser = async (req, res, next) => {
     try {
-        const person = await Person.findById(req.params.user_id);
+        const id = req.params.user_id;
+        if (isValidObjectId(id) == false) return res.status(404).json({
+            "message": "Person not found"
+        });
+        
+        const person = await Person.findById(id);
         if (!person) return res.status(404).json({
             "message": "Person not found"
         })
@@ -83,11 +94,11 @@ exports.updateUser = async (req, res, next) => {
             message: "'name' field is required"
         })
 
-        await Person.findByIdAndUpdate(req.params.user_id, {
+        await Person.findByIdAndUpdate(id, {
             "name": name
         });
 
-        const updatedPerson = await Person.findById(req.params.user_id);
+        const updatedPerson = await Person.findById(id);
 
         return res.status(200).json({
             "message": "Person updated successfully",
@@ -105,12 +116,17 @@ exports.updateUser = async (req, res, next) => {
  */
 exports.deleteUser = async (req, res, next) => {
     try {
-        const person = await Person.findById(req.params.user_id);
+        const id = req.params.user_id;
+        if (isValidObjectId(id) == false) return res.status(404).json({
+            "message": "Person not found"
+        });
+        
+        const person = await Person.findById(id);
         if (!person) return res.status(404).json({
             "message": "Person not found"
         })
 
-        const deletedPerson = await Person.findByIdAndDelete(req.params.user_id);
+        const deletedPerson = await Person.findByIdAndDelete(id);
         if (deletedPerson) {
             return res.status(200).json({
                 "message": "Person deleted successfully"
